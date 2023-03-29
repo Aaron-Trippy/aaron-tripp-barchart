@@ -38,19 +38,19 @@ export default function LineChart() {
         {
           label: "Total Sales of Recordings $ (x 1,000,000)",
           data: ["351.6", "297.5", "425.1", "456.1", "548.8"],
-          borderColor: "rgb(53, 16, 235)",
+          borderColor: "rgb(92, 106, 231)",
           fill: false,
         },
         {
           label: "Canadian Artists $ (x 1,000,000)",
           data: ["67.5", "73.8", "97.9", "100.7", "119.8"],
-          borderColor: "rgb(16, 235, 53)",
+          borderColor: "rgb(255, 99, 132)",
           fill: false,
         },
         {
           label: "Non-Canadian Artists $ (x 1,000,000)",
           data: ["284.1", "223.7", "327.2", "355.4", "428.9"],
-          borderColor: "rgb(235, 16, 53)",
+          borderColor: "rgb(75, 192, 192)",
           fill: false,
         },
       ],

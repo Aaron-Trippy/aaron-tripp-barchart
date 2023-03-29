@@ -1,0 +1,27 @@
+.main {
+    height: 100%;
+}
+
+.sideBar {
+    background-image: linear-gradient(to bottom, #c8d5ff, #5c6ae7);
+    min-height: 100%;
+    padding: 1rem;
+    border-radius: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    box-shadow : 0 0 10px 0 rgba(0,0,0,0.2);
+}
+
+.sideBar > div {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 100%;
+}

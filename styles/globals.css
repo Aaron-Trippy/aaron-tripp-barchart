@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+:root {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: rgb(240, 240, 240);
+}
+
+html, body {
+    height: 100%;
+}

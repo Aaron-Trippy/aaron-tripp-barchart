@@ -4,6 +4,8 @@ import styles from "@/styles/Home.module.css";
 import BarChart from "@/components/BarChart";
 import LineChart from "@/components/LineChart";
 import DonutChart from "@/components/DonutChart";
+import SideBar from "@/components/SideBar";
+import Card from "@/components/Card";
 
 export default function Home() {
   return (
@@ -15,9 +17,38 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <BarChart />
-        <LineChart />
-        <DonutChart />
+
+        <div className={styles.sideBar}>
+          <SideBar />
+        </div>
+
+        <div className={styles.largeContainer}>
+
+          <div className={styles.cardContainer}>
+            <Card title="Dashboard" desc="Aaron Tripp" color1="#d8c8ff" color2="#6c5ce7"/>
+            <Card title="Dynamic Content Design" desc="In-class Assignment" color1="#FFE0E6" color2="#FF9AAF"/>
+            <Card title="ChartJS" desc="Data via Stats Canada" color1="#DBF2F2" color2="#92D7D7"/>
+          </div>
+
+          <div className={styles.chartContainer}>
+            
+            <div className={styles.chartTop}>
+              <div className={styles.barChart}>
+                <BarChart />
+              </div>
+              <div className={styles.donutChart}>
+                <DonutChart />
+              </div>
+            </div>
+
+            <div className={styles.chartBot}>
+              <div className={styles.lineChart}>
+                <LineChart />
+              </div>
+            </div>
+            
+          </div>
+        </div>
       </main>
     </>
   );

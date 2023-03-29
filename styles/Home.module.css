@@ -1,7 +1,81 @@
 .main {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  height: 100%;
+  width: auto;
+  padding: 1rem;
   align-items: center;
-  padding: 2rem;
+  justify-content: center;
+}
+
+.sideBar {
+  display: flex;
+  height: 65.6rem;
+  padding-bottom: 30px;
+}
+
+.largeContainer {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
+  gap: 20px;
+}
+
+.cardContainer {
+  display: flex;
+  gap: 20px;
+}
+
+.cardContainer > * {
+  width: 50%;
+}
+
+.chartContainer {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 20px;
+}
+
+.chartTop {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+
+.chartTop > div {
+  box-shadow : 0 0 10px 0 rgba(0,0,0,0.1);
+}
+
+.barChart {
+  width: 60%;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.donutChart {
+  width: 40%;
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.chartBot{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.chartBot > div {
+  box-shadow : 0 0 10px 0 rgba(0,0,0,0.1);
+}
+
+.lineChart {
+  width: 100%;
+  background-color: white;
+  border-radius: 20px;
 }
