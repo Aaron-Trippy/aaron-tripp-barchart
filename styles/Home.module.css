@@ -10,7 +10,7 @@
 
 .sideBar {
   display: flex;
-  height: 65.6rem;
+  height: 67rem;
   padding-bottom: 30px;
 }
 
@@ -78,4 +78,6 @@
   width: 100%;
   background-color: white;
   border-radius: 20px;
+  padding: 10px;
+  box-sizing: border-box;
 }
