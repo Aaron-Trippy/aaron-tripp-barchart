@@ -29,13 +29,28 @@ export default function BarChart() {
 
   useEffect(() => {
     setChartData({
-      labels: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+      labels: ["2013", "2015", "2017", "2019", "2021"],
       datasets: [
         {
-          label: "Sales $",
-          data: ["16000", "20000", "15000", "18000", "19000", "21000", "29000"],
-          borderColor: "rgb(53, 16, 235)",
+          label: "Operating Revenue (x 1,000,000)",
+          data: [510.4, 462.0, 589.7, 624.0, 728.1],
           backgroundColor: "rgba(53, 16, 235, 0.2)",
+          borderColor: "rgb(53, 16, 235)",
+          borderWidth: 1,
+        },
+        {
+          label: "Operating Expenses (x 1,000,000)",
+          data: [487.8, 438.3, 552.2, 573.6, 659.6],
+          backgroundColor: "rgba(255, 99, 132, 0.2)",
+          borderColor: "rgb(255, 99, 132)",
+          borderWidth: 1,
+        },
+        {
+          label: "Salaries, Wages, Commissions and Benefits (x 1,000,000)",
+          data: [64.3, 62.9, 66.2, 78.1, 81.8],
+          backgroundColor: "rgba(75, 192, 192, 0.2)",
+          borderColor: "rgb(75, 192, 192)",
+          borderWidth: 1,
         },
       ],
     });
@@ -47,7 +62,28 @@ export default function BarChart() {
         },
         title: {
           display: true,
-          text: "Daily Revenue",
+          text: "Operating Revenue, Expenses and Salaries from 2013 to 2021",
+        },
+      },
+      scales: {
+        y: {
+          beginAtZero: true,
+          ticks: {
+            callback: function (value, index, values) {
+              return "$" + value.toLocaleString();
+            },
+          },
+          scaleLabel: {
+            display: true,
+            labelString: "Dollars (x 1,000,000)",
+          },
+        },
+        x: {
+          stacked: false,
+          scaleLabel: {
+            display: true,
+            labelString: "Year",
+          },
         },
       },
       maintainAspectRatio: false,

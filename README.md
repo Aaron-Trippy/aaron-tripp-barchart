@@ -8,4 +8,16 @@ https://react-chartjs-2.js.org/examples/
 npm i react-chartjs-2
 ```
 
-## Barcharts
+## Chart Sources
+
+# Barchart
+
+https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=2110005501
+
+# Line Chart
+
+https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=2110008301
+
+# Donut Chart
+
+https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=2110008401
